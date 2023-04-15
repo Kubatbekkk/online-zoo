@@ -1,0 +1,1479 @@
+#form-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  #form-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+form {
+  width: 100%;
+}
+form #debt-amount-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  position: relative;
+  width: 100%;
+  height: 27px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #404950;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  form #debt-amount-slider {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  form #debt-amount-slider {
+    height: 13.5px;
+  }
+}
+
+form #debt-amount-slider::before {
+  content: ' ';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  width: calc(106% * (7 / 8));
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #72828e;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  form #debt-amount-slider::before {
+    width: 95.375%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  form #debt-amount-slider::before {
+    width: 87.5%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  form #debt-amount-slider::before {
+    height: 1px;
+    width: 87.5%;
+  }
+}
+form #debt-amount-slider input,
+form #debt-amount-slider label {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+form #debt-amount-slider label {
+  display: inline-block;
+  position: relative;
+  min-width: 129px;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  form #debt-amount-slider label {
+    min-width: 128px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  form #debt-amount-slider label {
+    min-width: 128px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  form #debt-amount-slider label {
+    min-width: 65px;
+  }
+}
+form #debt-amount-slider label::before {
+  content: attr(data-debt-amount);
+  position: absolute;
+  left: 24%;
+  padding-top: 2px;
+  -webkit-transform: translate(-50%, 45px);
+  transform: translate(-50%, 45px);
+  font-weight: 500;
+  font-size: 26px;
+  white-space: nowrap;
+  opacity: 0.85;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  form #debt-amount-slider label::before {
+    left: 12%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  form #debt-amount-slider label::before {
+    left: 36%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  form #debt-amount-slider label::before {
+    font-size: 13px;
+    top: -29px;
+    left: 32%;
+  }
+}
+form #debt-amount-slider label::after {
+  content: ' ';
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: #ffee2e;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  form #debt-amount-slider label::after {
+    left: 18%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  form #debt-amount-slider label::after {
+    left: 34%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  form #debt-amount-slider label::after {
+    width: 5px;
+    height: 5px;
+  }
+}
+form #debt-amount-slider label:hover::after {
+  -webkit-transform: translate(-50%, -50%) scale(1.25);
+  transform: translate(-50%, -50%) scale(1.25);
+}
+form #debt-amount-slider input {
+  display: none;
+}
+form #debt-amount-slider input:checked + label::before {
+  font-weight: 500;
+  opacity: 1;
+}
+form #debt-amount-slider input:checked + label::after {
+  border-width: 4px;
+  -webkit-transform: translate(-50%, -50%) scale(0.75);
+  transform: translate(-50%, -50%) scale(0.75);
+}
+form #debt-amount-slider input:checked ~ #debt-amount-pos {
+  opacity: 1;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+form #debt-amount-slider input:checked:nth-child(1) ~ #debt-amount-pos {
+  left: 3.7%;
+}
+form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+  left: 16.9%;
+}
+form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+  left: 30.1%;
+}
+form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+  left: 43.35%;
+}
+form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+  left: 56.6%;
+}
+form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+  left: 69.75%;
+}
+form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+  left: 83%;
+}
+form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+  left: 96.2%;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(3) ~ #debt-amount-pos {
+    left: 2.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(5) ~ #debt-amount-pos {
+    left: 18.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 34.5%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 50.2%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 66%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 81.8%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 97.7%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 7.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 28.7%;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 50%;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71.3%;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(7) ~ #debt-amount-pos {
+    left: 6%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(9) ~ #debt-amount-pos {
+    left: 27.7%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(11) ~ #debt-amount-pos {
+    left: 49.3%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(13) ~ #debt-amount-pos {
+    left: 71%;
+    width: 5px;
+    height: 5px;
+  }
+  form #debt-amount-slider input:checked:nth-child(15) ~ #debt-amount-pos {
+    left: 92.7%;
+    width: 5px;
+    height: 5px;
+  }
+}
+
+form #debt-amount-slider #debt-amount-pos {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: #ffee2e;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  form #debt-amount-slider label.debt-none {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  form #debt-amount-slider label.debt-none {
+    display: none;
+  }
+  form #debt-amount-slider label.debt-none-tablet {
+    display: none;
+  }
+}
+form:valid #debt-amount-slider input + label::before {
+  -webkit-transform: translate(-50%, 45px) scale(1);
+  transform: translate(-50%, 45px) scale(1);
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+form:valid #debt-amount-slider input:checked + label::before {
+  -webkit-transform: translate(-50%, 45px) scale(1.1);
+  transform: translate(-50%, 45px) scale(1.1);
+  color: #f9804b;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+form:valid #debt-amount-slider input:checked + label::after {
+  background: url(../assets/icons/roller_icon.png) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#donate_number {
+  border: 1px solid #929699;
+  border-radius: 2px;
+  padding: 15px 9px;
+  color: #929699;
+  background: url(../assets/icons/dollar.svg) no-repeat 96%;
+  min-width: 268px;
+  margin-bottom: 28px;
+  font-size: 16px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  #donate_number {
+    border: 1px solid #929699;
+    border-radius: 2px;
+    padding: 10px 6px;
+    color: #929699;
+    min-width: 180px;
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  #donate_number {
+    padding: 11px 10px;
+    min-width: 187px;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+}
+
+/*  outer circle*/
+.custom-radio-btn {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border: 2px solid #f9804b;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.real-radio-btn {
+  /* hide real radiobtn*/
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/*  inner circle */
+.custom-radio-btn::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #f9804b;
+  border-radius: 50%;
+  /* positioning */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.real-radio-btn:checked + .custom-radio-btn {
+  border: 2px solid #f9804b;
+}
+
+.real-radio-btn:checked + .custom-radio-btn::before {
+  width: 10px;
+  height: 10px;
+  background: #f9804b;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.donate_main {
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+.donate_main .watch-online {
+  min-height: 390px;
+  background: url(../assets/images/giant-panda.jpg) no-repeat center 51%;
+  margin-bottom: -3px;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate_main .watch-online {
+    background: url(../assets/images/giant-panda.jpg) no-repeat 31% 51%;
+    background-size: auto;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate_main .watch-online {
+    min-height: 369px;
+    background: url(../assets/images/giant-panda.jpg) no-repeat 36% 45%;
+    margin-bottom: -3px;
+    background-size: 185%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate_main .watch-online {
+    min-height: 225px;
+    background: url(../assets/images/panda_donate_bg.jpg) no-repeat 36% 86%;
+    background-size: 101%;
+  }
+}
+
+.donate {
+  padding: 40px 0 202px 0;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate {
+    padding: 40px 0 49px 0;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate {
+    padding: 33px 0 66px 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate {
+    padding: 29px 0 40px 0;
+  }
+}
+
+.donate__titleBlock {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1600px) {
+  .donate__title {
+    margin-left: -10px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate__titleBlock h3 {
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__titleBlock h3 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__titleBlock h3 {
+    line-height: 120%;
+  }
+}
+
+.donate__titleBlock-text {
+  font-weight: 500;
+  margin-bottom: 44px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate__titleBlock-text {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__titleBlock-text {
+    margin-top: 19px;
+    margin-bottom: 29px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__titleBlock-text {
+    margin-top: 21px;
+    line-height: 137%;
+  }
+}
+
+.donate__orange {
+  color: #fe9013;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate__orange {
+    margin-bottom: 41px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__orange {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__orange {
+    margin-bottom: 20px;
+    margin-top: -21px;
+  }
+}
+
+.donate__pick {
+  padding: 41px 92px 59px 92px;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate__pick {
+    padding: 19px 49px 46px 47px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__pick {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__pick {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .donate__pick .pick__bg-tablet {
+    padding: 0px 0px 5px 0px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate__pick .pick__bg-tablet {
+    padding: 0px 0px 5px 0px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__pick .pick__bg-tablet {
+    padding: 30px 0px 32px 0px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__pick .pick__bg-tablet {
+    padding: 0 0 22px 0;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__pick-topRow {
+    padding: 0 45px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__pick-topRow {
+    padding-top: 5px;
+  }
+}
+
+.donate__title {
+  color: #fe9013;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate__title {
+    margin-bottom: 11px;
+    padding: 0 14px 0 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__title {
+    font-size: 24px;
+    margin-bottom: -3px;
+  }
+}
+
+.donate__pick-subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333b41;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__pick-subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__pick-subtitle {
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.donate__countDiet {
+  max-width: 544px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__countDiet {
+    margin-bottom: 31px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__countDiet {
+    margin-bottom: 3px;
+  }
+}
+
+.countDiet__number {
+  text-align: center;
+  margin-top: 57px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .countDiet__number {
+    margin-top: 57px;
+    min-width: 161px;
+    margin-left: 9px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .countDiet__number {
+    margin-top: 42px;
+    margin-left: -7px;
+    min-width: 35%;
+  }
+}
+
+.countDiet__num {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  margin-bottom: 11px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .countDiet__num {
+    font-size: 44px;
+    margin-bottom: 7px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .countDiet__day {
+    font-size: 9px;
+    line-height: 100%;
+  }
+}
+
+.countDiet__multiplyIcon {
+  padding-top: 37px;
+  padding-right: 82px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .countDiet__multiplyIcon {
+    padding-right: 73px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .countDiet__multiplyIcon {
+    padding-top: 43px;
+    padding-right: 49px;
+  }
+  .countDiet__multiplyIcon img {
+    max-width: 9px;
+  }
+}
+
+.countDiet__animal {
+  max-width: 268px;
+}
+.countDiet__animal img {
+  margin-left: -17px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .countDiet__animal {
+    margin-top: 16px;
+  }
+}
+
+.amount__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.donate__amount-another {
+  text-align: center;
+}
+
+.donate__amount-text {
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .donate__amount-text {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__amount-text {
+    margin-left: 9px;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__amount-text {
+    margin-left: 0px;
+  }
+}
+
+.donate__amount-bar {
+  margin-top: 17px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__amount-bar {
+    margin-top: 6px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__amount-bar {
+    margin-top: 7px;
+  }
+}
+
+.donate__amount-date {
+  margin: 0 auto;
+  max-width: 215px;
+  margin-bottom: 30px;
+}
+.donate__amount-date:hover input,
+.donate__amount-date label {
+  cursor: pointer;
+}
+.donate__amount-date label {
+  margin-right: 45px;
+  color: #333b41;
+  margin-left: 2px;
+}
+.donate__amount-date label:last-child {
+  margin-right: 0px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__amount-date {
+    max-width: 220px;
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__amount-date {
+    max-width: 222px;
+    margin-bottom: 26px;
+  }
+}
+
+.donate__share {
+  text-align: center;
+}
+
+.donate__pick .pick-feed__btn-block {
+  max-width: 288px;
+}
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  .donate__pick .pick-feed__btn-block {
+    max-width: 291px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__pick .pick-feed__btn-block {
+    max-width: 295px;
+  }
+}
+
+.donate__share-text {
+  margin-top: 29px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .donate__share-text {
+    font-size: 15.9px;
+  }
+}
+
+/* сдвинуть footer__nav-donate правее*/
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .footer__nav-donate {
+    margin-left: 120px;
+  }
+}
